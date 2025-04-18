@@ -78,4 +78,4 @@ def generate_top3():
     return "🏆 回測前三名：\n" + "\n".join([f"{i+1}. {r[symbol_col]} - {r['win_rate']:.1f}%" for i, r in top3.iterrows()])
 
 if __name__ == "__main__":
-app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
